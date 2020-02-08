@@ -9,7 +9,7 @@ import java.util.List;
 
 public class DownloadingResults{
     public static void downloadingRes(List<ListOfTitlesAndUrls> firstList
-                             , List<ListOfPrices> secondList) throws IOException {
+                                    , List<ListOfPrices> secondList) throws IOException {
         FileWriter fileWriter = new FileWriter("result.txt");
         for(int i = 0; i<firstList.size(); i++){
             String title = firstList.get(i).getName();
